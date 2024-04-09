@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="game.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4 in a row</title>
+    <link rel="icon" type="image/x-icon" href="../images/favicon.png">
+</head>
+
+
+<body>
+
+    <div class="game">
+
+        <!--תפריט צד-->
+        <div class="detail-board">
+            <div class="timer-block">
+                <p class="timer">00:00</p>
+
+            </div>
+            <!-- <h3 id="player-title">current player:</h3> -->
+
+            <div class="players-circles">
+                <div class="player" id="red">
+                    <p id="p1"></p>
+                </div>
+                <div class="player" id="yellow">
+                    <p id="p2"></p>
+                </div>
+            </div>
+            <div class="counter">
+                <p id="count-steps"> <img src="../images/step.png" alt="" srcset=""> steps: 0 </p>
+            </div>
+            <div class="current">
+                <div class="box">
+                    <div class="current-circle"></div>
+                </div>
+            </div>
+            <div class="buttons">
+                <button class="btn" id="new-game" onclick="btnNewGame()">new game</button>
+                <button class="btn" id="setting" onclick="btnLogin()">Home</button>
+                <button class="btn" id="details" onclick="btnDetails()">Details</button>
+            </div>
+
+        </div>
+
+
+        <!--לוח המשחק-->
+        <div class="game-board">
+            <!--חיצים-->
+            <div class="arrows"></div>
+            <!--לוח עיגולים-->
+            <div class="circles-board"></div>
+        </div>
+
+    </div>
+
+
+    <!--הודעת ניצחון-->
+    <div id="id01" class="modal">
+
+        <div class="modal-content animate" action="/action_page.php" method="post">
+
+            <div class="imgcontainer"> </div>
+
+            <!-- <h2 id="title">The Winner Is:</h2> -->
+            <h2 id="win-player">you win</h2>
+            <div class="details">
+                <img src="../images/win2.png" id="img_win" alt="">
+                <div class="informations">
+                    <p id="time"></p>
+                    <p id="steps"></p>
+                </div>
+            </div>
+            <div class="btn-win">
+                <button class="btn btn-dif" id="new-game" onclick="btnNewGame()"><img class="icons"
+                        src="../images/again-w.png" alt="" srcset=""></button>
+
+                <button class="btn btn-dif" id="home" onclick="btnLogin()"><img src="../images/home-w.png" class="icons"
+                        alt="" srcset=""></button>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <!--הודעת כישלון-->
+    <div id="id02" class="modal2">
+
+        <div class="modal-content2 animate" action="/action_page.php" method="post">
+
+            <div class="imgcontainer2">
+
+            </div>
+
+            <h2>game over</h2>
+            <div class="btn-win">
+                <button class="btn btn-dif" id="new-game" onclick="btnNewGame()"><img class="icons"
+                        src="../images/again-w.png" alt="" srcset=""></button>
+
+                <button class="btn btn-dif" id="home" onclick="btnLogin()"><img src="../images/home-w.png" class="icons"
+                        alt="" srcset=""></button>
+            </div>
+
+        </div>
+    </div>
+
+
+    <script src="game.js"></script>
+</body>
+
+</html>
