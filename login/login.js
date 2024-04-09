@@ -6,7 +6,7 @@ function start() {
     var audio = new Audio('../sound/start.wav');
     audio.play();
     setTimeout(function () {
-        location.href = `../game/index.html?name1=${inpPlyr1.value}&name2=${inpPlyr2.value}`;
+        location.href = `../game/game.html?name1=${inpPlyr1.value}&name2=${inpPlyr2.value}`;
     }, 1000)
 
 }
