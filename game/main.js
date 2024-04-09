@@ -350,7 +350,7 @@ function btnNewGame() {
 function btnLogin() {
     var audio = new Audio('../sound/click.wav');
     audio.play();
-    setTimeout(function () { location.href = `../login/login.html` }, 100)
+    setTimeout(function () { location.href = `../index.html` }, 100)
 }
 
 //לחיצה על כפתור דיטייל
