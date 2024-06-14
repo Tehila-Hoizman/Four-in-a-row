@@ -11,7 +11,8 @@ Four in a Row is a game for two players where the goal is to be the first to con
 - Play against another player locally.
 - Responsive design for different screen sizes.
 - Interactive game with levitation effects and animations for downloading a disc and background sounds.
-
+- Tracking the players score
+  
 ## Installation
 
 To play four in a row locally, follow these steps:
