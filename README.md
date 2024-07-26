@@ -19,7 +19,7 @@ To play four in a row locally, follow these steps:
 
 1. Clone the repository:
  ```
-   Clone git https://github.com/tehila0601/four-in-a-row.git
+   git clone https://github.com/tehila0601/four-in-a-row.git
  ```
 
 3. Open the index.html file in your web browser
